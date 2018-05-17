@@ -1,0 +1,52 @@
+==================
+* Fortran Notes *
+==================
+
+Print Statements 
+================
+
+Normal Statements
+------------------
+Print *, "This is a statement to be printed." 
+
+
+String Concatenation 
+====================
+
+Basic Printing w/ no need for formatting
+========================================
+Integer :: i = 77
+Print *, "You are " , i 
+
+"Advanced" Prining w/ Formatting
+=================================
+General syntax:
+Character(len=4) :: name = "Nick"
+WRITE(*,  '( "integer i is ", FORMAT SPECIFIER, ", and j is ", SPECIFIER, "." )' )  VARIABLES TO BE DISPLAYED
+
+Specifiers (discovered so far):
+A - Characters 
+I0 - Fit to number integer formatting
+I1 - Only first digit 
+(Reference: https://stackoverflow.com/questions/24844250/output-formatting-too-much-whitespace-in-gfortran).
+(Reference: http://www.meteor.iastate.edu/classes/mt227/lectures/Formatting.pdf) 
+
+
+Variable Defintions
+===================
+
+Integers 
+---------
+Integer :: i = 77
+
+
+User Input
+===========
+write *, VARIABLE_TO_STORE_DATA
+
+
+Comparitors 
+=============
+https://en.wikibooks.org/wiki/Fortran/Fortran_control
+
+
